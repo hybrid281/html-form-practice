@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+        <h1 id="title">Vehicle Data Test</h1>
+        
+          <p id="description">This is a quick survey to gain some feedback about current vehicles on the market today. Below, you will be given some example vehicles to choose from, along with your preferred body styles.</p>
+          <form id="survey-form">
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required>
+            
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" id="email" name="email" placeholder="john@smith.com"required>
+            
+            <label for="number" id="number-label">Number:</label>
+            <input type="number" id="number" name="number" placeholder="01234" min="4" max="5" size="5" required>
+            
+            <label for: "colors">Choose a Color:</label>
+            <select id="dropdown" name="colors">
+              <option value="red">Red</option>
+              <option value="blue">Blue</option>
+              <option value="yellow">Yellow</option>
+              <option value="green">Green</option>
+              <option value="purple">Purple</option>
+            </select>
+            <br>
+            <p>Select your favorites among the following pairs:</p>
+            <input type="radio" id="cars" name="fav_kia" value="cars">
+            <label for="cars">Kia Soul</label>
+            
+            <input type="radio" id="cars" name="fav_kia" value="cars">
+            <label for="cars">Kia Niro</label>
+            
+            <input type="radio" id="cars" name="fav_toyota" value="cars">
+            <label for="cars">Toyota Rav4</label>
+            
+            <input type="radio" id="cars" name="fav_toyota" value="cars">
+            <label for="cars">Toyota Highlander</label>
+            
+            <input type="radio" id="cars" name="fav_subaru" value="cars">
+            <label for="cars">Subaru BR-Z</label>
+            
+            <input type="radio" id="cars" name="fav_subaru" value="cars">
+            <label for="cars">Subaru WRX</label>
+            
+            <br>
+            <br>
+            <p>Select your preferred body styles: (select all that apply)</p>
+            <input type="checkbox" id="type1" name="type1" value="Coupe">
+            <label for="type1">Coupe</label>
+            <input type="checkbox" id="type2" name="type2" value="Sedan">
+            <label for="type2">Sedan</label>
+            <input type="checkbox" id="type3" name="type3" value="Hatchback">
+            <label for="type3">Hatchback</label>
+            <input type="checkbox" id="type4" name="type4" value="Truck">
+            <label for="type4">Truck</label>
+            
+            <br>
+            <br>
+            <p>Any further comments?</p>
+            <textarea name="comments" rows="5" cols="30">Feedback can go here... </textarea>
+              <!-- for additional comments -->
+            </br>
+            <button type="submit" id="submit">Submit</button>
+      
+          </form> 
+
+</body>
+</html>
